@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { purchasePlugin } from './definitions';
+import type { nearpayPlugin } from './definitions';
 
-const purchase = registerPlugin<purchasePlugin>('purchase', {
-  web: () => import('./web').then(m => new m.purchaseWeb()),
+const nearpay = registerPlugin<nearpayPlugin>('nearpay', {
+  web: () => import('./web').then(m => new m.nearpayWeb()),
 });
 
 export * from './definitions';
-export { purchase };
+export { nearpay };

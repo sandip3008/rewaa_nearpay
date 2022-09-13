@@ -5,9 +5,9 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(purchasePlugin)
-public class purchasePlugin: CAPPlugin {
-    private let implementation = purchase()
+@objc(nearpayPlugin)
+public class nearpayPlugin: CAPPlugin {
+    private let implementation = nearpay()
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""

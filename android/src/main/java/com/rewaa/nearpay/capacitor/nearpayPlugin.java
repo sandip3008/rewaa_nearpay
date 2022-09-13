@@ -6,10 +6,10 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "purchase")
-public class purchasePlugin extends Plugin {
+@CapacitorPlugin(name = "nearpay")
+public class nearpayPlugin extends Plugin {
 
-    private purchase implementation = new purchase();
+    private nearpay implementation = new nearpay();
 
     @PluginMethod
     public void echo(PluginCall call) {
